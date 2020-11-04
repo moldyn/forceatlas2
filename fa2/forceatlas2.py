@@ -234,7 +234,7 @@ class ForceAtlas2:
             attraction_timer.display()
             applyforces_timer.display()
         # ================================================================
-        return [(n.x, n.y) for n in nodes]
+        return [(n.x, n.y, n.dx, n.dy) for n in nodes]
 
     # A layout for NetworkX.
     #
